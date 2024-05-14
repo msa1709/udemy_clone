@@ -43,7 +43,10 @@ body{
     display: flex;
     gap:10px; 
     align-items: center;
-} 
+}  
+.navbar__s4{
+    display: none;
+}
 .categories {
     display: flex; 
     padding: 10px; 
@@ -110,4 +113,23 @@ body{
     height:50%;
     width:100%;
 
+} 
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+} 
+@media screen and (max-width:500px) {
+    .course-card{
+        flex-basis: 40%;
+    } 
+    .categories{
+        display: none;
+    } 
+    .navbar__s2,.navbar__s3{
+        display: none;
+    } 
+    .navbar__s4 {
+        display: block;
+    }
 }
