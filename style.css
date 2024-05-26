@@ -14,7 +14,8 @@ body{
     align-items: center;
     position: sticky;
     top:0;
-    background-color: white;
+    background-color: white; 
+    z-index: 1;
 } 
 .navbar__s1__title{
     color: blueviolet;
@@ -26,7 +27,8 @@ body{
     width: 60%; 
     display: flex;
     gap: 10px; 
-    align-items: center;
+    align-items: center; 
+    background-color: white;
   
 
 }  
@@ -44,6 +46,25 @@ body{
     gap:10px; 
     align-items: center;
 }  
+
+.mylearning{
+    position: relative; 
+    cursor: pointer;
+} 
+.mylearning__popup {
+    position: absolute; 
+    background-color: white; 
+    border: solid black 1px; 
+    width: 100px; 
+    top:150%; 
+    padding: 20px; 
+    right: 0; 
+    display: none;
+} 
+.mylearning:hover .mylearning__popup {
+    display: block;
+}
+
 .navbar__s4{
     display: none;
 }
@@ -67,6 +88,9 @@ body{
     background-color: transparent;
     color:black;
     border: solid violet 1px;
+} 
+.sale-image {
+    position: relative;
 }
 .sale-image img{
     width: 100%;
